@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ArButton from './components/ArButton';
+// import ArButton from './components/ArButton';
 
 class App extends React.Component {
 
@@ -24,7 +24,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <a-scene embedded arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
+                {/* <a-scene embedded arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
                     <canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"/>
 
                     <a-anchor hit-testing-enabled="true">
@@ -32,9 +32,12 @@ class App extends React.Component {
                         <a-box position='0 0 0.5' material='opacity: 0.7; color: yellow;'></a-box>
                     </a-anchor>
                     <a-camera-static preset="hiro" />
-
-                    {/* <ArButton /> */}
-
+                </a-scene> */}
+                <a-scene embedded arjs>
+                    <a-marker preset="hiro">
+                        <a-box position="0 0.5 0" material="color: yellow;"></a-box>
+                    </a-marker>
+                    <a-entity camera></a-entity>
                 </a-scene>
             </div>
         );
