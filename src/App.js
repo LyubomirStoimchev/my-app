@@ -33,7 +33,7 @@ class App extends React.Component {
                     </a-anchor>
                     <a-camera-static preset="hiro" />
 
-                    <ArButton/>
+                    {/* <ArButton /> */}
 
                 </a-scene>
             </div>
