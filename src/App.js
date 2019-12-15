@@ -4,13 +4,13 @@ import ArButton from './components/ArButton';
 
 class App extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         showPopup: false,
-    //         message: ''
-    //     };
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            showPopup: false,
+            message: ''
+        };
+    }
 
     // togglePopup() {
     //     this.setState({
@@ -23,10 +23,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                {/* // <div className="App"> */}
+            <div className="App">
                 <a-scene embedded arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
-                    <canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150" />
+                    <canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"/>
 
                     <a-anchor hit-testing-enabled="true">
                         <a-entity position='0 0 0' scale='0.05 0.05 0.05' rotation='200 0 0' obj-model='obj: url(models/dog.obj); mtl: url(models/dog.mtl)'></a-entity>
@@ -34,7 +33,7 @@ class App extends React.Component {
                     </a-anchor>
                     <a-camera-static preset="hiro" />
 
-                    <ArButton />
+                    <ArButton/>
 
                 </a-scene>
             </div>
