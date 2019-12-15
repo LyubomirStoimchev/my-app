@@ -5,9 +5,9 @@ class ArButton extends React.Component {
         super(props);
         this.state = {
             position: "-1.4 0.0 0.333",
-            href: "https://www.linkedin.com/in/jo",
+            href: "https://www.linkedin.com/",
             assetId: "linkedinTexture",
-            assetSrc: "https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostLinkedin.png?1528821333139"
+            assetSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
         };
     }
 
