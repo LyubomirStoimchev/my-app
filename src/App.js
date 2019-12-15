@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import ArButton from './components/ArButton';
+import ArButton from './components/ArButton';
 
 class App extends React.Component {
 
@@ -30,6 +30,7 @@ class App extends React.Component {
                         <a-box position='0 0 0.5' material='opacity: 0.7; color: yellow;'></a-box>
                     </a-anchor>
                     <a-camera-static preset="hiro" />
+                    <ArButton></ArButton>
                 </a-scene>
             </div>
         );
