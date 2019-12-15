@@ -13,7 +13,7 @@ class ArButton extends React.Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <a-assets>
                     <img crossorigin="anonymous" id={this.state.assetId} src={this.state.assetSrc} />
                 </a-assets>
@@ -23,7 +23,7 @@ class ArButton extends React.Component {
                         <a-animation attribute="rotation" begin="mouseenter" loop="true" end="mouseleave" dur="2000" fill="backwards" to="335 360 360" ease="linear" />
                     </a-box>
                 </a-link>
-            </div>
+            </React.Fragment>
         );
     }
 }
