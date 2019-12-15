@@ -4,10 +4,10 @@ class ArButton extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            position: "",
-            href: "",
-            assetId: "",
-            assetSrc: ""
+            position: "-1.4 0.0 0.333",
+            href: "https://www.linkedin.com/in/jo",
+            assetId: "linkedinTexture",
+            assetSrc: "https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostLinkedin.png?1528821333139"
         };
     }
 
