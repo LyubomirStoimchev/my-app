@@ -23,8 +23,8 @@ class App extends React.Component {
 
     render() {
         return (
-            <div class="App">
-                  <a-scene arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
+            <div className="App">
+                  {/* <a-scene arjs="sourceType: webcam;" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" aframe-inspector-removed-embedded="undefined">
                       <canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
                     <a-assets>
                         <img crossOrigin="anonymous" id="skypeTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostSkype.png?1528821334003" />
@@ -38,8 +38,7 @@ class App extends React.Component {
                         <img crossOrigin="anonymous" id="headshotTexture" src="https://cdn.glitch.com/6f8b5a13-fd4d-445d-b9eb-57c735d720ea%2FPostPostHeadshot.png?1528821994851" />
                     </a-assets>
 
-                    {/* <a-marker camera="active:false" type="pattern" url="https://cdn.glitch.com/5a8c2940-8667-40d7-9b93-b9e8050d72d1%2Fpattern-marker%20(5).patt?1528855127165" visible="false" material="" arjs-anchor="" arjs-hit-testing=""> */}
-                    <a-marker camera="active:false" preset="hiro" visible="false" material="" arjs-anchor="" arjs-hit-testing="">
+                     <a-marker camera="active:false" preset="hiro" visible="false" material="" arjs-anchor="" arjs-hit-testing="">
 
                         <a-entity id="stars" particle-system="preset: default; color: #515; particleCount: 30; maxAge: 2; randomize: false; blending: 1; opacity: .5; velocityValue:'50 10 0'" position="0 0 0" rotation="-90 0 0" direction="-1"></a-entity>
 
@@ -91,7 +90,7 @@ class App extends React.Component {
                         <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="0.01 0.01 0.01" to="0.02 0.02 0.02" dur="3000"></a-animation>
                         <a-animation begin="fusing" easing="ease-in" attribute="material.color" from="white" to="orange" dur="3000"></a-animation>
                     </a-entity>
-                </a-scene>
+                </a-scene> */}
             </div >
         );
     }
